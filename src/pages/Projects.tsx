@@ -1,0 +1,113 @@
+
+import ProjectCard from "@/components/ProjectCard";
+
+const Projects = () => {
+  const projects = [
+    {
+      title: "ShopGlow Haven",
+      description:
+        "E-commerce platform with modern UI and seamless shopping experience. Features include product catalog, shopping cart, and secure checkout process.",
+      link: "https://preview--shopglow-haven.lovable.app",
+    },
+    {
+      title: "Savory Resto",
+      description:
+        "Restaurant website featuring elegant design and online booking system. Includes menu showcase, reservation capabilities, and location information.",
+      link: "https://preview--savory-resto-replica.lovable.app",
+    },
+    {
+      title: "Pharmacy Flow System",
+      description:
+        "Comprehensive pharmacy management system for tracking inventory, processing orders, and managing customer information with an intuitive dashboard.",
+      link: "https://preview--pharmacy-flow-system.lovable.app",
+    },
+    {
+      title: "RemedyView Station",
+      description:
+        "Medical dashboard for healthcare professionals to monitor patient information, schedule appointments, and track medical records securely.",
+      link: "https://preview--remedyview-station.lovable.app",
+    },
+  ];
+
+  return (
+    <div>
+      {/* Projects Hero */}
+      <section className="py-16 md:py-24 bg-secondary">
+        <div className="section-container">
+          <div className="max-w-3xl mx-auto text-center">
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 animate-slide-down">
+              My Projects
+            </h1>
+            <p className="text-xl text-muted-foreground animate-slide-up">
+              A showcase of my recent web development and design work
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Projects Grid */}
+      <section className="py-16">
+        <div className="section-container">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {projects.map((project, index) => (
+              <ProjectCard
+                key={index}
+                title={project.title}
+                description={project.description}
+                link={project.link}
+                delay={index}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Process Section */}
+      <section className="py-16 bg-secondary">
+        <div className="section-container">
+          <h2 className="section-title fade-in-view">My Development Process</h2>
+          <div className="grid md:grid-cols-4 gap-8 mt-12">
+            <div className="fade-in-view glass rounded-xl p-6 text-center">
+              <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl font-bold text-primary">1</span>
+              </div>
+              <h3 className="text-xl font-bold mb-3">Discovery</h3>
+              <p className="text-muted-foreground">
+                Understanding requirements and defining project goals
+              </p>
+            </div>
+            <div className="fade-in-view glass rounded-xl p-6 text-center" style={{ transitionDelay: "0.1s" }}>
+              <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl font-bold text-primary">2</span>
+              </div>
+              <h3 className="text-xl font-bold mb-3">Design</h3>
+              <p className="text-muted-foreground">
+                Creating wireframes and visual designs that meet objectives
+              </p>
+            </div>
+            <div className="fade-in-view glass rounded-xl p-6 text-center" style={{ transitionDelay: "0.2s" }}>
+              <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl font-bold text-primary">3</span>
+              </div>
+              <h3 className="text-xl font-bold mb-3">Development</h3>
+              <p className="text-muted-foreground">
+                Building robust code with modern technologies
+              </p>
+            </div>
+            <div className="fade-in-view glass rounded-xl p-6 text-center" style={{ transitionDelay: "0.3s" }}>
+              <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl font-bold text-primary">4</span>
+              </div>
+              <h3 className="text-xl font-bold mb-3">Delivery</h3>
+              <p className="text-muted-foreground">
+                Testing, refining, and launching the final product
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Projects;
