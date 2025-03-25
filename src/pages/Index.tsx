@@ -6,19 +6,22 @@ import ProjectCard from "@/components/ProjectCard";
 const Index = () => {
   const featuredProjects = [
     {
-      title: "ShopGlow Haven",
-      description: "E-commerce platform with modern UI and seamless shopping experience.",
-      link: "https://preview--shopglow-haven.lovable.app",
+      title: "Pharmacy Flow System",
+      description: "Pharmacy management system for tracking inventory and orders.",
+      link: "https://preview--pharmacy-flow-system.lovable.app",
+      image: "/lovable-uploads/0f10928f-68f7-4da8-a4c1-17ad1c4edebb.png",
     },
     {
       title: "Savory Resto",
       description: "Restaurant website featuring elegant design and online booking.",
       link: "https://preview--savory-resto-replica.lovable.app",
+      image: "/lovable-uploads/a1491d02-e1d4-4569-9485-32a4c3949821.png",
     },
     {
-      title: "Pharmacy Flow System",
-      description: "Pharmacy management system for tracking inventory and orders.",
-      link: "https://preview--pharmacy-flow-system.lovable.app",
+      title: "ShopGlow Haven",
+      description: "E-commerce platform with modern UI and seamless shopping experience.",
+      link: "https://preview--shopglow-haven.lovable.app",
+      image: "/lovable-uploads/b503d201-320c-4385-9ef6-54be36a41063.png",
     },
   ];
 
@@ -75,6 +78,7 @@ const Index = () => {
                 title={project.title}
                 description={project.description}
                 link={project.link}
+                image={project.image}
                 delay={index}
               />
             ))}

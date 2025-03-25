@@ -4,28 +4,32 @@ import ProjectCard from "@/components/ProjectCard";
 const Projects = () => {
   const projects = [
     {
-      title: "ShopGlow Haven",
+      title: "Pharmacy Flow System",
       description:
-        "E-commerce platform with modern UI and seamless shopping experience. Features include product catalog, shopping cart, and secure checkout process.",
-      link: "https://preview--shopglow-haven.lovable.app",
+        "Comprehensive pharmacy management system for tracking inventory, processing orders, and managing customer information with an intuitive dashboard.",
+      link: "https://preview--pharmacy-flow-system.lovable.app",
+      image: "/lovable-uploads/0f10928f-68f7-4da8-a4c1-17ad1c4edebb.png",
     },
     {
       title: "Savory Resto",
       description:
         "Restaurant website featuring elegant design and online booking system. Includes menu showcase, reservation capabilities, and location information.",
       link: "https://preview--savory-resto-replica.lovable.app",
+      image: "/lovable-uploads/a1491d02-e1d4-4569-9485-32a4c3949821.png",
     },
     {
-      title: "Pharmacy Flow System",
+      title: "ShopGlow Haven",
       description:
-        "Comprehensive pharmacy management system for tracking inventory, processing orders, and managing customer information with an intuitive dashboard.",
-      link: "https://preview--pharmacy-flow-system.lovable.app",
+        "E-commerce platform with modern UI and seamless shopping experience. Features include product catalog, shopping cart, and secure checkout process.",
+      link: "https://preview--shopglow-haven.lovable.app",
+      image: "/lovable-uploads/b503d201-320c-4385-9ef6-54be36a41063.png",
     },
     {
       title: "RemedyView Station",
       description:
         "Medical dashboard for healthcare professionals to monitor patient information, schedule appointments, and track medical records securely.",
       link: "https://preview--remedyview-station.lovable.app",
+      image: "/lovable-uploads/7fc7b9b2-da77-493e-9879-10015c8eed11.png",
     },
   ];
 
@@ -55,6 +59,7 @@ const Projects = () => {
                 title={project.title}
                 description={project.description}
                 link={project.link}
+                image={project.image}
                 delay={index}
               />
             ))}
