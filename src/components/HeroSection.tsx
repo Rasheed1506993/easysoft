@@ -13,14 +13,17 @@ const HeroSection = () => {
     const cta = ctaRef.current;
 
     if (title) {
+      title.style.opacity = "1";
       title.classList.add("animate-slide-up");
       title.style.animationDelay = "0.2s";
     }
     if (subtitle) {
+      subtitle.style.opacity = "1";
       subtitle.classList.add("animate-slide-up");
       subtitle.style.animationDelay = "0.4s";
     }
     if (cta) {
+      cta.style.opacity = "1";
       cta.classList.add("animate-slide-up");
       cta.style.animationDelay = "0.6s";
     }
@@ -36,17 +39,23 @@ const HeroSection = () => {
         <div className="max-w-3xl mx-auto text-center">
           <h1 
             ref={titleRef}
-            className="opacity-0 text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-6"
+            className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-6"
+            style={{ opacity: 0, transition: "opacity 0.5s ease" }}
           >
             Rasheed Sharaf AL-Deen
           </h1>
           <p 
             ref={subtitleRef}
-            className="opacity-0 text-xl md:text-2xl text-muted-foreground mb-8"
+            className="text-xl md:text-2xl text-muted-foreground mb-8"
+            style={{ opacity: 0, transition: "opacity 0.5s ease" }}
           >
             Web Developer & Designer
           </p>
-          <div ref={ctaRef} className="opacity-0 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+          <div 
+            ref={ctaRef} 
+            className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4"
+            style={{ opacity: 0, transition: "opacity 0.5s ease" }}
+          >
             <Link
               to="/projects"
               className="px-8 py-3 rounded-lg bg-primary text-primary-foreground shadow-lg hover:opacity-90 transition-all"
