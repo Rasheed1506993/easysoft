@@ -42,8 +42,8 @@ const Projects = () => {
       title: "E-Learning Platform",
       description:
         "Online educational platform with login systems for students and teachers, course uploads, assessment systems, and discussion forums.",
-      link: "https://lovable.dev/c/new",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      link: "https://preview--coursebridge-connect.lovable.app",
+      image: "/lovable-uploads/78d695eb-4e5c-493f-913b-87b4cbe95545.png",
     },
     {
       title: "E-Commerce Store",
