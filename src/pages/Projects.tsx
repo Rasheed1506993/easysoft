@@ -41,7 +41,12 @@ const Projects = () => {
     {
       title: "E-Learning Platform",
       description:
-        "Online educational platform with login systems for students and teachers, course uploads, assessment systems, and discussion forums.",
+        "منصة تعليمية متكاملة توفر دورات عالية الجودة بأيدي أفضل المدرسين، تقدم مجالات متنوعة مثل البرمجة والتصميم والأعمال، مع نظام بحث متقدم ودعم للغة العربية.",
+      images: [
+        "/lovable-uploads/78d695eb-4e5c-493f-913b-87b4cbe95545.png",
+        "/lovable-uploads/867e689b-85ad-432d-8406-1dc0bbafb123.png",
+        "/lovable-uploads/dfb01e3a-6f77-46cb-b3e0-bda2bf57f02f.png"
+      ],
       link: "https://preview--coursebridge-connect.lovable.app",
       image: "/lovable-uploads/78d695eb-4e5c-493f-913b-87b4cbe95545.png",
     },
@@ -102,6 +107,7 @@ const Projects = () => {
                 description={project.description}
                 link={project.link}
                 image={project.image}
+                images={project.images}
                 delay={index}
               />
             ))}

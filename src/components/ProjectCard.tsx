@@ -6,11 +6,29 @@ interface ProjectCardProps {
   description: string;
   link: string;
   image?: string;
+  images?: string[];
   delay?: number;
 }
 
-const ProjectCard = ({ title, description, link, image, delay = 0 }: ProjectCardProps) => {
+const ProjectCard = ({ title, description, link, image, images, delay = 0 }: ProjectCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  
+  // استخدم الصور المتعددة إذا كانت متوفرة، وإلا استخدم الصورة الفردية
+  const hasMultipleImages = images && images.length > 1;
+  const displayImage = hasMultipleImages ? images[currentImageIndex] : image;
+  
+  const nextImage = () => {
+    if (hasMultipleImages) {
+      setCurrentImageIndex((prev) => (prev + 1) % images.length);
+    }
+  };
+
+  const prevImage = () => {
+    if (hasMultipleImages) {
+      setCurrentImageIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+    }
+  };
 
   return (
     <div 
@@ -27,15 +45,47 @@ const ProjectCard = ({ title, description, link, image, delay = 0 }: ProjectCard
       >
         <div className="glass h-full rounded-2xl overflow-hidden transform transition-all duration-500 hover:scale-[1.02] hover:shadow-xl">
           <div className="relative h-48 overflow-hidden">
-            {image ? (
-              <img
-                src={image}
-                alt={title}
-                className="w-full h-full object-cover transition-transform duration-700 ease-out"
-                style={{
-                  transform: isHovered ? "scale(1.05)" : "scale(1)",
-                }}
-              />
+            {displayImage ? (
+              <>
+                <img
+                  src={displayImage}
+                  alt={title}
+                  className="w-full h-full object-cover transition-transform duration-700 ease-out"
+                  style={{
+                    transform: isHovered ? "scale(1.05)" : "scale(1)",
+                  }}
+                />
+                {hasMultipleImages && (
+                  <div className="absolute inset-x-0 bottom-0 flex justify-between p-2">
+                    <button 
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        prevImage();
+                      }}
+                      className="bg-black/40 hover:bg-black/60 text-white w-8 h-8 rounded-full flex items-center justify-center"
+                      aria-label="Previous image"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M15 18l-6-6 6-6" />
+                      </svg>
+                    </button>
+                    <button 
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        nextImage();
+                      }}
+                      className="bg-black/40 hover:bg-black/60 text-white w-8 h-8 rounded-full flex items-center justify-center"
+                      aria-label="Next image"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M9 18l6-6-6-6" />
+                      </svg>
+                    </button>
+                  </div>
+                )}
+              </>
             ) : (
               <div className="w-full h-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
                 <span className="text-2xl font-bold text-primary/60">{title.charAt(0)}</span>
