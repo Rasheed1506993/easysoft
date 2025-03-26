@@ -35,43 +35,43 @@ const Projects = () => {
       title: "Food Delivery Platform",
       description:
         "User-friendly food delivery website with restaurant menu display, table reservation system, and integration with delivery services.",
-      link: "#",
-      image: "",
+      link: "https://lovable.dev/c/new",
+      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     },
     {
       title: "E-Learning Platform",
       description:
         "Online educational platform with login systems for students and teachers, course uploads, assessment systems, and discussion forums.",
-      link: "#",
-      image: "",
+      link: "https://lovable.dev/c/new",
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     },
     {
       title: "E-Commerce Store",
       description:
         "Attractive online store with product management system, secure shopping cart, payment gateway, and product review functionality.",
-      link: "#",
-      image: "",
+      link: "https://lovable.dev/c/new",
+      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     },
     {
       title: "Medical Clinic Website",
       description:
         "Healthcare clinic website showcasing services and doctors, with online appointment booking system and patient communication tools.",
-      link: "#",
-      image: "",
+      link: "https://lovable.dev/c/new",
+      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     },
     {
       title: "Travel Agency Website",
       description:
         "Travel agency portal displaying trips and tours, with integrated booking and ticketing system and multi-language support.",
-      link: "#",
-      image: "",
+      link: "https://lovable.dev/c/new",
+      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     },
     {
       title: "Real Estate Platform",
       description:
         "Property listing website for sales and rentals with advanced search filters by location, price, and size, and direct communication tools.",
-      link: "#",
-      image: "",
+      link: "https://lovable.dev/c/new",
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     },
   ];
 
