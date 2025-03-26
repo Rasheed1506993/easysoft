@@ -31,6 +31,48 @@ const Projects = () => {
       link: "https://preview--remedyview-station.lovable.app",
       image: "/lovable-uploads/7fc7b9b2-da77-493e-9879-10015c8eed11.png",
     },
+    {
+      title: "Food Delivery Platform",
+      description:
+        "User-friendly food delivery website with restaurant menu display, table reservation system, and integration with delivery services.",
+      link: "#",
+      image: "",
+    },
+    {
+      title: "E-Learning Platform",
+      description:
+        "Online educational platform with login systems for students and teachers, course uploads, assessment systems, and discussion forums.",
+      link: "#",
+      image: "",
+    },
+    {
+      title: "E-Commerce Store",
+      description:
+        "Attractive online store with product management system, secure shopping cart, payment gateway, and product review functionality.",
+      link: "#",
+      image: "",
+    },
+    {
+      title: "Medical Clinic Website",
+      description:
+        "Healthcare clinic website showcasing services and doctors, with online appointment booking system and patient communication tools.",
+      link: "#",
+      image: "",
+    },
+    {
+      title: "Travel Agency Website",
+      description:
+        "Travel agency portal displaying trips and tours, with integrated booking and ticketing system and multi-language support.",
+      link: "#",
+      image: "",
+    },
+    {
+      title: "Real Estate Platform",
+      description:
+        "Property listing website for sales and rentals with advanced search filters by location, price, and size, and direct communication tools.",
+      link: "#",
+      image: "",
+    },
   ];
 
   return (
