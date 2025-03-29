@@ -32,6 +32,17 @@ const Projects = () => {
       image: "/lovable-uploads/7fc7b9b2-da77-493e-9879-10015c8eed11.png",
     },
     {
+      title: "عقاراتنا - Real Estate Platform",
+      description:
+        "موقع عقاري متكامل لعرض العقارات المتاحة للبيع أو الإيجار مع نظام بحث متقدم يسمح بالتصفية حسب الموقع والسعر والمساحة. يمكن المستخدمين من التواصل المباشر مع الملاك أو الوسطاء.",
+      link: "https://p-7949.lovable.app",
+      images: [
+        "/lovable-uploads/d6142c41-4bcc-4be8-b703-5165a9eb37e2.png",
+        "/lovable-uploads/7c8d4191-0bba-4269-b80f-d13965f8e537.png"
+      ],
+      image: "/lovable-uploads/d6142c41-4bcc-4be8-b703-5165a9eb37e2.png",
+    },
+    {
       title: "E-Learning Platform",
       description:
         "منصة تعليمية متكاملة توفر دورات عالية الجودة بأيدي أفضل المدرسين، تقدم مجالات متنوعة مثل البرمجة والتصميم والأعمال، مع نظام بحث متقدم ودعم للغة العربية.",
