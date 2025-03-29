@@ -32,13 +32,6 @@ const Projects = () => {
       image: "/lovable-uploads/7fc7b9b2-da77-493e-9879-10015c8eed11.png",
     },
     {
-      title: "Food Delivery Platform",
-      description:
-        "User-friendly food delivery website with restaurant menu display, table reservation system, and integration with delivery services.",
-      link: "https://lovable.dev/c/new",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    },
-    {
       title: "E-Learning Platform",
       description:
         "منصة تعليمية متكاملة توفر دورات عالية الجودة بأيدي أفضل المدرسين، تقدم مجالات متنوعة مثل البرمجة والتصميم والأعمال، مع نظام بحث متقدم ودعم للغة العربية.",
@@ -49,35 +42,7 @@ const Projects = () => {
       ],
       link: "https://preview--coursebridge-connect.lovable.app",
       image: "/lovable-uploads/78d695eb-4e5c-493f-913b-87b4cbe95545.png",
-    },
-    {
-      title: "E-Commerce Store",
-      description:
-        "Attractive online store with product management system, secure shopping cart, payment gateway, and product review functionality.",
-      link: "https://lovable.dev/c/new",
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    },
-    {
-      title: "Medical Clinic Website",
-      description:
-        "Healthcare clinic website showcasing services and doctors, with online appointment booking system and patient communication tools.",
-      link: "https://lovable.dev/c/new",
-      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    },
-    {
-      title: "Travel Agency Website",
-      description:
-        "Travel agency portal displaying trips and tours, with integrated booking and ticketing system and multi-language support.",
-      link: "https://lovable.dev/c/new",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    },
-    {
-      title: "Real Estate Platform",
-      description:
-        "Property listing website for sales and rentals with advanced search filters by location, price, and size, and direct communication tools.",
-      link: "https://lovable.dev/c/new",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    },
+    }
   ];
 
   return (
