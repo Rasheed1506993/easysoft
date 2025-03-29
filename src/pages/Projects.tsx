@@ -43,6 +43,17 @@ const Projects = () => {
       image: "/lovable-uploads/d6142c41-4bcc-4be8-b703-5165a9eb37e2.png",
     },
     {
+      title: "All-in-One Delivery Platform",
+      description:
+        "منصة توصيل شاملة لجميع احتياجاتك، من الطعام إلى البقالة والصيدليات وأكثر. تطبيق واحد يجمع خدمات متعددة مع تتبع المندوب وخيارات دفع متنوعة.",
+      link: "https://preview--allinone-delivery-hub.lovable.app",
+      images: [
+        "/lovable-uploads/3537029d-d205-4f7e-956b-385f601bebe7.png",
+        "/lovable-uploads/b69961af-187f-4a16-bf4b-155919a74769.png"
+      ],
+      image: "/lovable-uploads/3537029d-d205-4f7e-956b-385f601bebe7.png",
+    },
+    {
       title: "E-Learning Platform",
       description:
         "منصة تعليمية متكاملة توفر دورات عالية الجودة بأيدي أفضل المدرسين، تقدم مجالات متنوعة مثل البرمجة والتصميم والأعمال، مع نظام بحث متقدم ودعم للغة العربية.",
