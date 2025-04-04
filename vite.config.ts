@@ -1,4 +1,3 @@
-
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
@@ -10,9 +9,6 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  // إضافة base path لاستخدامه في GitHub Pages
-  // استبدل "your-repo-name" باسم مستودعك على GitHub
-  base: mode === 'production' ? '/your-repo-name/' : '/',
   plugins: [
     react(),
     mode === 'development' &&
