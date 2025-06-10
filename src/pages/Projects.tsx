@@ -8,28 +8,28 @@ const Projects = () => {
       description:
         "Comprehensive pharmacy management system for tracking inventory, processing orders, and managing customer information with an intuitive dashboard.",
       link: "https://preview--pharmacy-flow-system.lovable.app",
-      image: "/lovable-uploads/0f10928f-68f7-4da8-a4c1-17ad1c4edebb.png",
+      image: "/easysoft/lovable-uploads/0f10928f-68f7-4da8-a4c1-17ad1c4edebb.png",
     },
     {
       title: "Savory Resto",
       description:
         "Restaurant website featuring elegant design and online booking system. Includes menu showcase, reservation capabilities, and location information.",
       link: "https://preview--savory-resto-replica.lovable.app",
-      image: "/lovable-uploads/a1491d02-e1d4-4569-9485-32a4c3949821.png",
+      image: "/easysoft/lovable-uploads/a1491d02-e1d4-4569-9485-32a4c3949821.png",
     },
     {
       title: "ShopGlow Haven",
       description:
         "E-commerce platform with modern UI and seamless shopping experience. Features include product catalog, shopping cart, and secure checkout process.",
       link: "https://preview--shopglow-haven.lovable.app",
-      image: "/lovable-uploads/b503d201-320c-4385-9ef6-54be36a41063.png",
+      image: "/easysoft/lovable-uploads/b503d201-320c-4385-9ef6-54be36a41063.png",
     },
     {
       title: "RemedyView Station",
       description:
         "Medical dashboard for healthcare professionals to monitor patient information, schedule appointments, and track medical records securely.",
       link: "https://preview--remedyview-station.lovable.app",
-      image: "/lovable-uploads/7fc7b9b2-da77-493e-9879-10015c8eed11.png",
+      image: "/easysoft/lovable-uploads/7fc7b9b2-da77-493e-9879-10015c8eed11.png",
     },
     {
       title: "عقاراتنا - Real Estate Platform",
@@ -37,10 +37,10 @@ const Projects = () => {
         "موقع عقاري متكامل لعرض العقارات المتاحة للبيع أو الإيجار مع نظام بحث متقدم يسمح بالتصفية حسب الموقع والسعر والمساحة. يمكن المستخدمين من التواصل المباشر مع الملاك أو الوسطاء.",
       link: "https://p-7949.lovable.app",
       images: [
-        "/lovable-uploads/d6142c41-4bcc-4be8-b703-5165a9eb37e2.png",
-        "/lovable-uploads/7c8d4191-0bba-4269-b80f-d13965f8e537.png"
+        "/easysoft/lovable-uploads/d6142c41-4bcc-4be8-b703-5165a9eb37e2.png",
+        "/easysoft/lovable-uploads/7c8d4191-0bba-4269-b80f-d13965f8e537.png"
       ],
-      image: "/lovable-uploads/d6142c41-4bcc-4be8-b703-5165a9eb37e2.png",
+      image: "/easysoft/lovable-uploads/d6142c41-4bcc-4be8-b703-5165a9eb37e2.png",
     },
     {
       title: "All-in-One Delivery Platform",
@@ -48,22 +48,22 @@ const Projects = () => {
         "منصة توصيل شاملة لجميع احتياجاتك، من الطعام إلى البقالة والصيدليات وأكثر. تطبيق واحد يجمع خدمات متعددة مع تتبع المندوب وخيارات دفع متنوعة.",
       link: "https://preview--allinone-delivery-hub.lovable.app",
       images: [
-        "/lovable-uploads/3537029d-d205-4f7e-956b-385f601bebe7.png",
-        "/lovable-uploads/b69961af-187f-4a16-bf4b-155919a74769.png"
+        "/easysoft/lovable-uploads/3537029d-d205-4f7e-956b-385f601bebe7.png",
+        "/easysoft/lovable-uploads/b69961af-187f-4a16-bf4b-155919a74769.png"
       ],
-      image: "/lovable-uploads/3537029d-d205-4f7e-956b-385f601bebe7.png",
+      image: "/easysoft/lovable-uploads/3537029d-d205-4f7e-956b-385f601bebe7.png",
     },
     {
       title: "E-Learning Platform",
       description:
         "منصة تعليمية متكاملة توفر دورات عالية الجودة بأيدي أفضل المدرسين، تقدم مجالات متنوعة مثل البرمجة والتصميم والأعمال، مع نظام بحث متقدم ودعم للغة العربية.",
       images: [
-        "/lovable-uploads/78d695eb-4e5c-493f-913b-87b4cbe95545.png",
-        "/lovable-uploads/867e689b-85ad-432d-8406-1dc0bbafb123.png",
-        "/lovable-uploads/dfb01e3a-6f77-46cb-b3e0-bda2bf57f02f.png"
+        "/easysoft/lovable-uploads/78d695eb-4e5c-493f-913b-87b4cbe95545.png",
+        "/easysoft/lovable-uploads/867e689b-85ad-432d-8406-1dc0bbafb123.png",
+        "/easysoft/lovable-uploads/dfb01e3a-6f77-46cb-b3e0-bda2bf57f02f.png"
       ],
       link: "https://preview--coursebridge-connect.lovable.app",
-      image: "/lovable-uploads/78d695eb-4e5c-493f-913b-87b4cbe95545.png",
+      image: "/easysoft/lovable-uploads/78d695eb-4e5c-493f-913b-87b4cbe95545.png",
     }
   ];
 
