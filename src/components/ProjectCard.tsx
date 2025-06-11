@@ -1,5 +1,6 @@
 
 import { useState } from "react";
+import { useLanguage } from "@/hooks/useLanguage";
 
 interface ProjectCardProps {
   title: string;
@@ -13,6 +14,7 @@ interface ProjectCardProps {
 const ProjectCard = ({ title, description, link, image, images, delay = 0 }: ProjectCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const { t } = useLanguage();
   
   // استخدم الصور المتعددة إذا كانت متوفرة، وإلا استخدم الصورة الفردية
   const hasMultipleImages = images && images.length > 1;
@@ -99,7 +101,7 @@ const ProjectCard = ({ title, description, link, image, images, delay = 0 }: Pro
           <div className="p-6">
             <p className="text-muted-foreground">{description}</p>
             <div className="mt-4 flex justify-between items-center">
-              <span className="text-sm text-primary font-medium">View Project</span>
+              <span className="text-sm text-primary font-medium">{t('projects.viewProject')}</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"

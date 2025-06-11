@@ -2,6 +2,7 @@
 import { ReactNode, useEffect } from "react";
 import Navbar from "./Navbar";
 import { useLocation } from "react-router-dom";
+import { useLanguage } from "@/hooks/useLanguage";
 
 interface LayoutProps {
   children: ReactNode;
@@ -9,6 +10,7 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
   const location = useLocation();
+  const { t } = useLanguage();
 
   useEffect(() => {
     // Scroll to top on route change
@@ -49,7 +51,7 @@ const Layout = ({ children }: LayoutProps) => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
               <p className="text-sm text-muted-foreground">
-                © {new Date().getFullYear()} Rasheed Sharaf AL-Deen. All rights reserved.
+                © {new Date().getFullYear()} Rasheed Sharaf AL-Deen. {t('footer.rights')}
               </p>
             </div>
             <div className="flex space-x-6">

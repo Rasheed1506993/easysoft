@@ -1,11 +1,13 @@
 
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import { useLanguage } from "@/hooks/useLanguage";
 
 const HeroSection = () => {
   const titleRef = useRef<HTMLHeadingElement>(null);
   const subtitleRef = useRef<HTMLParagraphElement>(null);
   const ctaRef = useRef<HTMLDivElement>(null);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const title = titleRef.current;
@@ -42,14 +44,14 @@ const HeroSection = () => {
             className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-6"
             style={{ opacity: 0, transition: "opacity 0.5s ease" }}
           >
-            Rasheed Sharaf AL-Deen
+            {t('hero.name')}
           </h1>
           <p 
             ref={subtitleRef}
             className="text-xl md:text-2xl text-muted-foreground mb-8"
             style={{ opacity: 0, transition: "opacity 0.5s ease" }}
           >
-            Web Developer & Designer
+            {t('hero.title')}
           </p>
           <div 
             ref={ctaRef} 
@@ -60,13 +62,13 @@ const HeroSection = () => {
               to="/projects"
               className="px-8 py-3 rounded-lg bg-primary text-primary-foreground shadow-lg hover:opacity-90 transition-all"
             >
-              View My Work
+              {t('hero.viewWork')}
             </Link>
             <Link
               to="/contact"
               className="px-8 py-3 rounded-lg bg-secondary text-secondary-foreground shadow hover:bg-secondary/80 transition-all"
             >
-              Contact Me
+              {t('hero.contactMe')}
             </Link>
           </div>
         </div>
