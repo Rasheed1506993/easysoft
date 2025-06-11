@@ -63,10 +63,11 @@ const translations = {
     'project.resto.desc': 'Restaurant website featuring elegant design and online booking system. Includes menu showcase, reservation capabilities, and location information.',
     'project.shop.desc': 'E-commerce platform with modern UI and seamless shopping experience. Features include product catalog, shopping cart, and secure checkout process.',
     'project.remedy.desc': 'Medical dashboard for healthcare professionals to monitor patient information, schedule appointments, and track medical records securely.',
-    'project.realestate.desc': 'موقع عقاري متكامل لعرض العقارات المتاحة للبيع أو الإيجار مع نظام بحث متقدم يسمح بالتصفية حسب الموقع والسعر والمساحة. يمكن المستخدمين من التواصل المباشر مع الملاك أو الوسطاء.',
-    'project.delivery.desc': 'منصة توصيل شاملة لجميع احتياجاتك، من الطعام إلى البقالة والصيدليات وأكثر. تطبيق واحد يجمع خدمات متعددة مع تتبع المندوب وخيارات دفع متنوعة.',
-    'project.elearning.desc': 'منصة تعليمية متكاملة توفر دورات عالية الجودة بأيدي أفضل المدرسين، تقدم مجالات متنوعة مثل البرمجة والتصميم والأعمال، مع نظام بحث متقدم ودعم للغة العربية.',
-  },
+    'project.realestate.desc': 'Comprehensive real estate website for listing properties for sale or rent, featuring an advanced search system that filters by location, price, and size. Enables direct communication with owners or agents.',
+    'project.delivery.desc': 'All-in-one delivery platform for your needs—from food and groceries to pharmacies and more. A single app that combines multiple services with real-time tracking and various payment options.',
+    'project.elearning.desc': 'Integrated e-learning platform offering high-quality courses by top instructors. Covers diverse fields such as programming, design, and business, with advanced search and Arabic language support.',
+    
+     },
   ar: {
     // شريط التنقل
     'nav.home': 'الرئيسية',
