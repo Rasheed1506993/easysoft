@@ -1,69 +1,220 @@
-# Welcome to your Lovable project
 
-## Project info
+# 🌟 My Portfolio Website
 
-**URL**: https://lovable.dev/projects/0fbc103c-8ab8-4ad0-a8bd-e07795f93605
+موقع شخصي احترافي لعرض أعمالي ومهاراتي في تطوير الويب والتصميم
 
-## How can I edit this code?
+## 📋 نظرة عامة
 
-There are several ways of editing your application.
+هذا موقع شخصي تم بناؤه باستخدام أحدث تقنيات الويب لعرض مشاريعي ومهاراتي كمطور ويب ومصمم. الموقع يتميز بتصميم عصري وتجربة مستخدم سلسة مع دعم كامل للعربية والإنجليزية.
 
-**Use Lovable**
+## ✨ المميزات
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/0fbc103c-8ab8-4ad0-a8bd-e07795f93605) and start prompting.
+- 🎨 **تصميم عصري وجذاب** - واجهة مستخدم حديثة مع تأثيرات بصرية متقدمة
+- 📱 **تصميم متجاوب** - يعمل بشكل مثالي على جميع الأجهزة
+- 🌙 **وضع مظلم/فاتح** - إمكانية التبديل بين الأوضاع
+- ⚡ **أداء عالي** - تحميل سريع وتفاعل سلس
+- 🌐 **دعم متعدد اللغات** - العربية والإنجليزية
+- 🔍 **SEO محسن** - محرك بحث مُحسن
+- 📧 **نموذج اتصال** - إمكانية التواصل المباشر
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ التقنيات المستخدمة
 
-**Use your preferred IDE**
+### Frontend
+- **React 18** - مكتبة JavaScript لبناء واجهات المستخدم
+- **TypeScript** - JavaScript مع الكتابة الثابتة
+- **Vite** - أداة بناء سريعة وحديثة
+- **React Router** - للتنقل بين الصفحات
+- **Tailwind CSS** - إطار عمل CSS للتصميم السريع
+- **Tailwind Animate** - تأثيرات الحركة والانتقالات
+- **Shadcn/ui** - مكونات UI جاهزة وعالية الجودة
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### State Management & Data
+- **TanStack Query** - إدارة البيانات والطلبات
+- **React Hook Form** - إدارة النماذج
+- **Zod** - التحقق من صحة البيانات
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Icons & Charts
+- **Lucide React** - مجموعة أيقونات حديثة
+- **Recharts** - مكتبة الرسوم البيانية
 
-Follow these steps:
+### Development Tools
+- **ESLint** - أداة فحص جودة الكود
+- **PostCSS** - معالج CSS
+- **Autoprefixer** - إضافة البادئات تلقائياً
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 📁 هيكل المشروع
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+```
+my-portfolio/
+├── public/                 # الملفات الثابتة
+│   ├── lovable-uploads/   # صور المشاريع
+│   └── favicon.ico        # أيقونة الموقع
+├── src/
+│   ├── components/        # المكونات القابلة لإعادة الاستخدام
+│   │   ├── Layout.tsx     # تخطيط الصفحة الرئيسي
+│   │   ├── Navbar.tsx     # شريط التنقل
+│   │   ├── HeroSection.tsx # قسم الهيرو
+│   │   ├── ProjectCard.tsx # بطاقة المشروع
+│   │   └── ui/           # مكونات واجهة المستخدم
+│   ├── pages/            # صفحات الموقع
+│   │   ├── Index.tsx     # الصفحة الرئيسية
+│   │   ├── About.tsx     # صفحة نبذة عني
+│   │   ├── Projects.tsx  # صفحة المشاريع
+│   │   ├── Services.tsx  # صفحة الخدمات
+│   │   ├── Skills.tsx    # صفحة المهارات
+│   │   ├── Contact.tsx   # صفحة التواصل
+│   │   └── NotFound.tsx  # صفحة 404
+│   ├── lib/              # المكتبات والأدوات المساعدة
+│   ├── hooks/            # React Hooks مخصصة
+│   ├── App.tsx           # مكون التطبيق الرئيسي
+│   ├── main.tsx          # نقطة دخول التطبيق
+│   └── index.css         # أنماط CSS الرئيسية
+├── tailwind.config.ts    # إعدادات Tailwind CSS
+├── vite.config.ts        # إعدادات Vite
+├── tsconfig.json         # إعدادات TypeScript
+└── package.json          # تبعيات المشروع
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🚀 البدء السريع
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### المتطلبات الأساسية
+
+- Node.js (الإصدار 18 أو أحدث)
+- npm أو yarn أو pnpm
+
+### التثبيت
+
+```bash
+# استنساخ المستودع
+git clone https://github.com/your-username/my-portfolio.git
+
+# الانتقال إلى مجلد المشروع
+cd my-portfolio
+
+# تثبيت التبعيات
+npm install
+
+# تشغيل الخادم المحلي
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+الموقع سيكون متاحاً على: `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📝 الأوامر المتاحة
 
-**Use GitHub Codespaces**
+```bash
+# تشغيل الخادم المحلي للتطوير
+npm run dev
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+# بناء المشروع للإنتاج
+npm run build
 
-## What technologies are used for this project?
+# معاينة البناء المحلي
+npm run preview
 
-This project is built with .
+# فحص جودة الكود
+npm run lint
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🎨 التخصيص
 
-## How can I deploy this project?
+### تخصيص الألوان
+يمكنك تخصيص نظام الألوان من خلال تعديل ملف `src/index.css`:
 
-Simply open [Lovable](https://lovable.dev/projects/0fbc103c-8ab8-4ad0-a8bd-e07795f93605) and click on Share -> Publish.
+```css
+:root {
+  --background: 210 40% 98%;
+  --foreground: 222.2 84% 4.9%;
+  --primary: 222.2 47.4% 11.2%;
+  /* ... باقي الألوان */
+}
+```
 
-## I want to use a custom domain - is that possible?
+### تخصيص الخطوط
+يمكنك تغيير الخطوط من خلال تعديل `tailwind.config.ts`:
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+```ts
+fontFamily: {
+  sans: ['Inter', 'sans-serif'],
+  display: ['SF Pro Display', 'Inter', 'sans-serif'],
+}
+```
+
+### إضافة مشاريع جديدة
+لإضافة مشروع جديد، قم بتعديل مصفوفة `projects` في `src/pages/Projects.tsx`:
+
+```tsx
+const projects = [
+  {
+    title: "اسم المشروع",
+    description: "وصف المشروع",
+    link: "https://link-to-project.com",
+    image: "/path-to-image.png",
+  },
+  // ...باقي المشاريع
+];
+```
+
+## 📱 الصفحات المتاحة
+
+- **الرئيسية** (`/`) - صفحة الهبوط الرئيسية
+- **نبذة عني** (`/about`) - معلومات شخصية ومهنية
+- **المشاريع** (`/projects`) - عرض جميع المشاريع
+- **الخدمات** (`/services`) - الخدمات المقدمة
+- **المهارات** (`/skills`) - المهارات التقنية
+- **التواصل** (`/contact`) - نموذج التواصل
+
+## 🌐 النشر
+
+### Netlify
+```bash
+npm run build
+# رفع مجلد dist إلى Netlify
+```
+
+### Vercel
+```bash
+npm install -g vercel
+vercel --prod
+```
+
+### GitHub Pages
+```bash
+npm run build
+# نشر مجلد dist على GitHub Pages
+```
+
+## 🤝 المساهمة
+
+أرحب بالمساهمات! إذا كان لديك اقتراحات للتحسين:
+
+1. Fork المشروع
+2. إنشاء فرع للميزة الجديدة (`git checkout -b feature/AmazingFeature`)
+3. Commit التغييرات (`git commit -m 'Add some AmazingFeature'`)
+4. Push للفرع (`git push origin feature/AmazingFeature`)
+5. فتح Pull Request
+
+## 📄 الترخيص
+
+هذا المشروع مرخص تحت رخصة MIT - راجع ملف [LICENSE](LICENSE) للتفاصيل.
+
+## 📞 التواصل
+
+**Rasheed Sharaf AL-Deen**
+- 📧 Email: mazen1221cool@gmail.com
+- 📱 Phone: +966539628489
+- 🌐 Portfolio: [your-portfolio-url.com]
+
+## 🙏 شكر وتقدير
+
+شكر خاص للمكتبات والأدوات مفتوحة المصدر التي جعلت هذا المشروع ممكناً:
+
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Vite](https://vitejs.dev/)
+- [Shadcn/ui](https://ui.shadcn.com/)
+- [Lucide Icons](https://lucide.dev/)
+
+---
+
+⭐ إذا أعجبك هذا المشروع، لا تنس إعطاؤه نجمة على GitHub!
