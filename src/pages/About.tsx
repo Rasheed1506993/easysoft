@@ -1,7 +1,9 @@
-
 import { Link } from "react-router-dom";
+import { useLanguage } from "@/hooks/useLanguage";
 
 const About = () => {
+  const { t } = useLanguage();
+
   return (
     <div>
       {/* About Hero */}
@@ -9,10 +11,10 @@ const About = () => {
         <div className="section-container">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 animate-slide-down">
-              About Me
+              {t('about.title')}
             </h1>
             <p className="text-xl text-muted-foreground animate-slide-up">
-              Passionate web developer and designer crafting digital experiences
+              {t('about.subtitle')}
             </p>
           </div>
         </div>
@@ -29,8 +31,8 @@ const About = () => {
                   <div className="w-32 h-32 rounded-full bg-primary/10 mb-6 flex items-center justify-center">
                     <span className="text-3xl font-bold text-primary">R</span>
                   </div>
-                  <h2 className="text-2xl font-bold mb-2">Rasheed Sharaf AL-Deen</h2>
-                  <p className="text-muted-foreground mb-4">Web Developer & Designer</p>
+                  <h2 className="text-2xl font-bold mb-2">{t('hero.name')}</h2>
+                  <p className="text-muted-foreground mb-4">{t('hero.title')}</p>
                   <div className="w-16 h-1 bg-primary/30 rounded-full mb-6"></div>
 
                   <div className="space-y-3 w-full text-left">
@@ -86,7 +88,7 @@ const About = () => {
                       to="/contact"
                       className="w-full py-2.5 px-4 rounded-lg bg-primary text-primary-foreground text-sm shadow hover:opacity-90 transition-all flex justify-center items-center"
                     >
-                      Contact Me
+                      {t('hero.contactMe')}
                     </Link>
                   </div>
                 </div>
@@ -97,68 +99,68 @@ const About = () => {
             <div className="md:col-span-3">
               <div className="space-y-12">
                 <section className="fade-in-view">
-                  <h3 className="text-2xl font-bold mb-4">About Me</h3>
+                  <h3 className="text-2xl font-bold mb-4">{t('about.aboutMe')}</h3>
                   <div className="prose prose-lg">
                     <p className="mb-4">
-                      I am a passionate web developer and designer with a keen eye for detail and a dedication to creating exceptional digital experiences. My journey in web development began with a curiosity about how websites work, and has evolved into a professional career building elegant, functional web applications.
+                      {t('about.aboutText1')}
                     </p>
                     <p className="mb-4">
-                      I combine technical expertise with creative problem-solving to deliver solutions that not only meet but exceed client expectations. My approach focuses on user-centered design principles, ensuring that the end product is not just visually appealing but also intuitive and accessible.
+                      {t('about.aboutText2')}
                     </p>
                     <p>
-                      When I'm not coding, I enjoy staying up-to-date with the latest technologies and design trends, contributing to open-source projects, and collaborating with other developers to share knowledge and best practices.
+                      {t('about.aboutText3')}
                     </p>
                   </div>
                 </section>
 
                 <section className="fade-in-view">
-                  <h3 className="text-2xl font-bold mb-4">Experience</h3>
+                  <h3 className="text-2xl font-bold mb-4">{t('about.experience')}</h3>
                   <div className="space-y-6">
                     <div className="glass rounded-xl p-6">
                       <div className="flex justify-between mb-2">
-                        <h4 className="font-bold">Senior Web Developer</h4>
-                        <span className="text-sm text-muted-foreground">2020 - Present</span>
+                        <h4 className="font-bold">{t('about.seniorDev')}</h4>
+                        <span className="text-sm text-muted-foreground">{t('about.seniorDevDuration')}</span>
                       </div>
-                      <p className="text-muted-foreground mb-4">TechSolutions Inc.</p>
+                      <p className="text-muted-foreground mb-4">{t('about.seniorDevCompany')}</p>
                       <p className="text-sm">
-                        Lead development of web applications using React, Node.js, and modern frontend frameworks. Collaborate with design and product teams to create exceptional user experiences.
+                        {t('about.seniorDevDesc')}
                       </p>
                     </div>
 
                     <div className="glass rounded-xl p-6">
                       <div className="flex justify-between mb-2">
-                        <h4 className="font-bold">Frontend Developer</h4>
-                        <span className="text-sm text-muted-foreground">2018 - 2020</span>
+                        <h4 className="font-bold">{t('about.frontendDev')}</h4>
+                        <span className="text-sm text-muted-foreground">{t('about.frontendDevDuration')}</span>
                       </div>
-                      <p className="text-muted-foreground mb-4">Digital Innovations Co.</p>
+                      <p className="text-muted-foreground mb-4">{t('about.frontendDevCompany')}</p>
                       <p className="text-sm">
-                        Developed responsive websites and web applications. Worked with JavaScript frameworks and CSS preprocessors to create modern, performant interfaces.
+                        {t('about.frontendDevDesc')}
                       </p>
                     </div>
 
                     <div className="glass rounded-xl p-6">
                       <div className="flex justify-between mb-2">
-                        <h4 className="font-bold">Web Design Intern</h4>
-                        <span className="text-sm text-muted-foreground">2017 - 2018</span>
+                        <h4 className="font-bold">{t('about.intern')}</h4>
+                        <span className="text-sm text-muted-foreground">{t('about.internDuration')}</span>
                       </div>
-                      <p className="text-muted-foreground mb-4">Creative Design Studio</p>
+                      <p className="text-muted-foreground mb-4">{t('about.internCompany')}</p>
                       <p className="text-sm">
-                        Assisted senior designers with website mockups and implementations. Learned fundamentals of UX/UI design and frontend development.
+                        {t('about.internDesc')}
                       </p>
                     </div>
                   </div>
                 </section>
 
                 <section className="fade-in-view">
-                  <h3 className="text-2xl font-bold mb-4">Education</h3>
+                  <h3 className="text-2xl font-bold mb-4">{t('about.education')}</h3>
                   <div className="glass rounded-xl p-6">
                     <div className="flex justify-between mb-2">
-                      <h4 className="font-bold">Bachelor of Science in Computer Science</h4>
-                      <span className="text-sm text-muted-foreground">2014 - 2018</span>
+                      <h4 className="font-bold">{t('about.degree')}</h4>
+                      <span className="text-sm text-muted-foreground">{t('about.degreeDuration')}</span>
                     </div>
-                    <p className="text-muted-foreground mb-4">University of Technology</p>
+                    <p className="text-muted-foreground mb-4">{t('about.university')}</p>
                     <p className="text-sm">
-                      Graduated with honors. Specialized in Web Technologies and Human-Computer Interaction.
+                      {t('about.degreeDesc')}
                     </p>
                   </div>
                 </section>
@@ -172,15 +174,15 @@ const About = () => {
       <section className="py-16 bg-secondary">
         <div className="section-container">
           <div className="fade-in-view max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">Ready to Start a Project?</h2>
+            <h2 className="text-3xl font-bold mb-6">{t('about.ctaTitle')}</h2>
             <p className="text-lg mb-8">
-              Let's collaborate to bring your vision to life.
+              {t('about.ctaText')}
             </p>
             <Link
               to="/contact"
               className="px-8 py-3 rounded-lg bg-primary text-primary-foreground shadow-lg hover:opacity-90 transition-all"
             >
-              Get in Touch
+              {t('about.ctaButton')}
             </Link>
           </div>
         </div>

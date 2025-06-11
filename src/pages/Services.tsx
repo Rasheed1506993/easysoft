@@ -1,8 +1,11 @@
+import { useLanguage } from "@/hooks/useLanguage";
 
 const Services = () => {
+  const { t } = useLanguage();
+
   const services = [
     {
-      title: "Web Development",
+      title: t('services.webDev'),
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -20,11 +23,10 @@ const Services = () => {
           <polyline points="8 6 2 12 8 18"></polyline>
         </svg>
       ),
-      description:
-        "Creating modern, responsive websites and web applications using the latest technologies and best practices. From simple landing pages to complex web applications, I deliver high-quality solutions that meet your specific needs.",
+      description: t('services.webDevDesc'),
     },
     {
-      title: "UI/UX Design",
+      title: t('services.uiux'),
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -44,11 +46,10 @@ const Services = () => {
           <line x1="15" y1="9" x2="15.01" y2="9"></line>
         </svg>
       ),
-      description:
-        "Designing intuitive and engaging user interfaces with a focus on user experience. I create designs that are not only visually appealing but also functional, accessible, and optimized for conversion and engagement.",
+      description: t('services.uiuxDesc'),
     },
     {
-      title: "E-commerce Solutions",
+      title: t('services.ecommerce'),
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -67,11 +68,10 @@ const Services = () => {
           <path d="m6 1 2 4h8l2-4"></path>
         </svg>
       ),
-      description:
-        "Building comprehensive e-commerce platforms with secure payment processing, inventory management, and customer relationship management. I create online stores that provide seamless shopping experiences and drive sales.",
+      description: t('services.ecommerceDesc'),
     },
     {
-      title: "Content Management Systems",
+      title: t('services.cms'),
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -89,11 +89,10 @@ const Services = () => {
           <polyline points="14 2 14 8 20 8"></polyline>
         </svg>
       ),
-      description:
-        "Implementing and customizing content management systems that make it easy for you to update and maintain your website. Whether you need a simple blog or a complex content-driven website, I can create a solution that meets your needs.",
+      description: t('services.cmsDesc'),
     },
     {
-      title: "Performance Optimization",
+      title: t('services.performance'),
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -114,11 +113,10 @@ const Services = () => {
           <path d="M5 10V5h5"></path>
         </svg>
       ),
-      description:
-        "Improving the speed and performance of existing websites to provide a better user experience and higher search engine rankings. I identify and fix performance bottlenecks, optimize code, and implement caching strategies.",
+      description: t('services.performanceDesc'),
     },
     {
-      title: "Responsive Web Design",
+      title: t('services.responsive'),
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -137,8 +135,7 @@ const Services = () => {
           <path d="M12 15v4"></path>
         </svg>
       ),
-      description:
-        "Creating websites that look and function great on all devices, from desktop computers to smartphones. I ensure your site provides an excellent user experience regardless of screen size or device type.",
+      description: t('services.responsiveDesc'),
     },
   ];
 
@@ -149,10 +146,10 @@ const Services = () => {
         <div className="section-container">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 animate-slide-down">
-              My Services
+              {t('services.title')}
             </h1>
             <p className="text-xl text-muted-foreground animate-slide-up">
-              Professional web development and design services tailored to your needs
+              {t('services.subtitle')}
             </p>
           </div>
         </div>
@@ -182,41 +179,41 @@ const Services = () => {
       {/* How I Work */}
       <section className="py-16 bg-secondary">
         <div className="section-container">
-          <h2 className="section-title fade-in-view">How I Work</h2>
+          <h2 className="section-title fade-in-view">{t('services.processTitle')}</h2>
           <div className="max-w-3xl mx-auto mt-12">
             <div className="fade-in-view relative border-l-2 border-primary/30 pl-8 pb-10">
               <div className="absolute left-[-8px] top-0 w-4 h-4 rounded-full bg-primary"></div>
-              <h3 className="text-xl font-bold mb-3">Initial Consultation</h3>
+              <h3 className="text-xl font-bold mb-3">{t('services.step1')}</h3>
               <p className="text-muted-foreground">
-                We begin with a detailed conversation about your project goals, requirements, and vision. This helps me understand exactly what you need and how I can best serve you.
+                {t('services.step1Desc')}
               </p>
             </div>
             <div className="fade-in-view relative border-l-2 border-primary/30 pl-8 pb-10" style={{ transitionDelay: "0.1s" }}>
               <div className="absolute left-[-8px] top-0 w-4 h-4 rounded-full bg-primary"></div>
-              <h3 className="text-xl font-bold mb-3">Proposal & Planning</h3>
+              <h3 className="text-xl font-bold mb-3">{t('services.step2')}</h3>
               <p className="text-muted-foreground">
-                I'll create a detailed proposal outlining the scope, timeline, and cost of your project. Once approved, I develop a comprehensive plan to guide the project from start to finish.
+                {t('services.step2Desc')}
               </p>
             </div>
             <div className="fade-in-view relative border-l-2 border-primary/30 pl-8 pb-10" style={{ transitionDelay: "0.2s" }}>
               <div className="absolute left-[-8px] top-0 w-4 h-4 rounded-full bg-primary"></div>
-              <h3 className="text-xl font-bold mb-3">Design & Development</h3>
+              <h3 className="text-xl font-bold mb-3">{t('services.step3')}</h3>
               <p className="text-muted-foreground">
-                I create mockups for your approval, then begin the development process. Throughout this phase, I maintain regular communication to ensure the project is progressing according to your expectations.
+                {t('services.step3Desc')}
               </p>
             </div>
             <div className="fade-in-view relative border-l-2 border-primary/30 pl-8 pb-10" style={{ transitionDelay: "0.3s" }}>
               <div className="absolute left-[-8px] top-0 w-4 h-4 rounded-full bg-primary"></div>
-              <h3 className="text-xl font-bold mb-3">Testing & Review</h3>
+              <h3 className="text-xl font-bold mb-3">{t('services.step4')}</h3>
               <p className="text-muted-foreground">
-                I thoroughly test the project across different devices and browsers, fixing any issues that arise. You'll have the opportunity to review and request any adjustments.
+                {t('services.step4Desc')}
               </p>
             </div>
             <div className="fade-in-view relative pl-8" style={{ transitionDelay: "0.4s" }}>
               <div className="absolute left-[-8px] top-0 w-4 h-4 rounded-full bg-primary"></div>
-              <h3 className="text-xl font-bold mb-3">Launch & Support</h3>
+              <h3 className="text-xl font-bold mb-3">{t('services.step5')}</h3>
               <p className="text-muted-foreground">
-                Once everything is approved, I launch your project and provide support to ensure everything runs smoothly. I also offer maintenance services to keep your project up-to-date.
+                {t('services.step5Desc')}
               </p>
             </div>
           </div>
@@ -227,15 +224,15 @@ const Services = () => {
       <section className="py-16">
         <div className="section-container">
           <div className="fade-in-view glass rounded-2xl p-10 max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">Ready to Start Your Project?</h2>
+            <h2 className="text-3xl font-bold mb-6">{t('services.ctaTitle')}</h2>
             <p className="text-lg mb-8 max-w-2xl mx-auto">
-              Let's work together to create something amazing. Contact me to discuss your project and how I can help bring your vision to life.
+              {t('services.ctaText')}
             </p>
             <a
               href="/contact"
               className="px-8 py-3 rounded-lg bg-primary text-primary-foreground shadow-lg hover:opacity-90 transition-all"
             >
-              Get in Touch
+              {t('services.ctaButton')}
             </a>
           </div>
         </div>
